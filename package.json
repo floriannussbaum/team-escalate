@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "name": "team-escalate",
+  "type": "module",
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.20.0",
+  "description": "Team Escalate bietet Parkour, Freerunning und Tricking in Halle (Saale). Hier finden sich Informationen zum Training, Team, Kontakt und Angeboten.",
+  "homepage": "https://www.team-escalate.de/",
+  "author": "Florian Nußbaum <Team-Escalate@web.de>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "format": "prettier \"**/*.{css,html,json,js,md,ts,vue,yml}\" --write --ignore-path .gitignore",
+    "lint": "eslint \"**/*.{ts,vue}\" --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@headlessui/vue": "1.7.23",
+    "@heroicons/vue": "^2.2.0",
+    "@nuxt/kit": "^4.2.1",
+    "@vueuse/core": "^14.0.0",
+    "@vueuse/nuxt": "^14.0.0",
+    "nuxt": "^4.2.1",
+    "vue": "^3.5.23",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "1.10.0",
+    "@unocss/nuxt": "66.5.4",
+    "@unocss/preset-typography": "66.5.4",
+    "@unocss/preset-wind": "66.5.4",
+    "@unocss/reset": "66.5.4",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-tailwindcss": "^3.18.2",
+    "eslint-plugin-vue": "^10.5.1",
+    "lint-staged": "^16.2.6",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.7.1",
+    "tailwindcss": "^4.1.17",
+    "typescript": "^5.9.3",
+    "unocss": "66.5.4",
+    "vue-tsc": "^3.1.3"
+  }
+}

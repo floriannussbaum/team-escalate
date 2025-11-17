@@ -1,0 +1,25 @@
+<template>
+  <div>
+    <!-- SEO optimized -->
+    <img
+      src="~/assets/logos/team-escalate-logo.svg"
+      alt="Team Escalate Halle (Saale) – Offizielle Webseite"
+      class="hidden"
+    />
+
+    <!-- Inline-SVG -->
+    <svg
+      width="528"
+      height="640"
+      viewBox="0 0 528 640"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      v-bind="$attrs"
+    >
+      <metadata>Copyright © 2025 Team Escalate. All rights reserved.</metadata>
+      <path
+        d="M300 640H188V112H0V0H300V640ZM528 640H352V528H528V640ZM528 376H352V264H528V376ZM528 112H352V0H528V112Z"
+      />
+    </svg>
+  </div>
+</template>

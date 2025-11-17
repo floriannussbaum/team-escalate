@@ -1,0 +1,128 @@
+/** --------------- FONTS --------------- **/
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/roboto-v49-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/roboto-v49-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/roboto-v49-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/roboto-v49-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-800 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  src: url('./fonts/roboto-v49-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-900 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('./fonts/roboto-v49-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  font-family: 'Roboto', Arial, sans-serif;
+
+  /** --------------- PRIMARY COLORS --------------- **/
+  --primary: #202327;
+  --bg-primary: #202327;
+  --fill-primary: #202327;
+
+  /** --------------- SECONDARY COLORS --------------- **/
+  --secondary: #e7e7e7;
+}
+
+/** --------------- REGULAR CLASSES --------------- **/
+
+.paint-order {
+  paint-order: stroke fill;
+}
+
+.link,
+.link-underlined .link-text {
+  display: inline-flex;
+  color: #2563eb; /* Tailwind blue-600 */
+  line-height: 1rem;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.3s ease-out;
+}
+
+.link:hover,
+.link:focus,
+.link-underlined:hover .link-text,
+.link-underlined:focus .link-text {
+  background-size: 100% 1px;
+}
+
+/** --------------- OVERWRITE CLASSES --------------- **/
+.prose {
+  max-width: 100%;
+  color: var(--primary);
+}
+.prose h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+/** --------------- ANIMATIONS --------------- **/
+@keyframes opacity-out {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-out {
+  to {
+    rotate: 0deg;
+  }
+}
+
+@keyframes translate-x-in {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes translate-y-out {
+  to {
+    transform: translateY(0%);
+  }
+}

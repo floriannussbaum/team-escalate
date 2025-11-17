@@ -1,0 +1,12 @@
+{
+  "name": "Team Escalate",
+  "short_name": "Team Escalate",
+  "description": "Team Escalate aus Halle (Saale) – Parkour, Freerunning und Tricking.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "de",
+  "dir": "ltr",
+  "orientation": "any",
+  "id": "/"
+}
