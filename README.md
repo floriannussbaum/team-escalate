@@ -8,7 +8,7 @@ Check the live version [www.team-escalate.de](https://team-escalate.de)
 
 ## 🏃 About me
 
-[![Me](https://img.shields.io/static/v1?label=Site&message=FlorianGlaeser.de&color=blue&logo=quicklook)][me-href]
+[![Me](https://img.shields.io/static/v1?label=Site&message=fn-code.com&color=blue&logo=quicklook)][me-href]
 
 [![GitHub](https://img.shields.io/static/v1?label=GitHub&message=floriannussbaum&color=blue&logo=github)][github-href]
 
@@ -42,5 +42,5 @@ Copyright © 2025-PRESENT [Florian Nußbaum][github-href] | all rights reserved
 
 <!-- Links -->
 
-[me-href]: https://florianglaeser.de
+[me-href]: https://fn-code.com
 [github-href]: https://github.com/floriannussbaum

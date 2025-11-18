@@ -129,7 +129,7 @@
         Konstantinstraße 5<br />
         04315 Leipzig
       </p>
-      <p>E-Mail: Team-Escalate@web.de<br /></p>
+      <p>E-Mail: florian@fn-code.com<br /></p>
       <p>
         Verantwortliche Stelle ist die nat&uuml;rliche oder juristische Person,
         die allein oder gemeinsam mit anderen &uuml;ber die Zwecke und Mittel

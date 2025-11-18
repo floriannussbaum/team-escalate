@@ -13,7 +13,7 @@
       <h2>Kontakt</h2>
       <p>
         <strong>Keine Trainingsanfragen!</strong><br />
-        E-Mail: Team-Escalate@web.de<br />
+        E-Mail: florian@fn-code.com<br />
       </p>
 
       <p>

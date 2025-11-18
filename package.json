@@ -6,7 +6,7 @@
   "packageManager": "pnpm@10.20.0",
   "description": "Team Escalate bietet Parkour, Freerunning und Tricking in Halle (Saale). Hier finden sich Informationen zum Training, Team, Kontakt und Angeboten.",
   "homepage": "https://www.team-escalate.de/",
-  "author": "Florian Nußbaum <Team-Escalate@web.de>",
+  "author": "Florian Nußbaum <florian@fn-code.com>",
   "license": "UNLICENSED",
   "scripts": {
     "build": "nuxt build",
