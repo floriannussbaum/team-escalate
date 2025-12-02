@@ -42,9 +42,9 @@
       </section>
     </PageContainer>
 
-    <PageContainer>
+    <PageContainer class="bg-gray-50 py-24">
       <section aria-labelledby="partners" class="page-space space-y-6">
-        <ElementH2 id="partners">Partner</ElementH2>
+        <ElementH2 id="partners" class="text-gray-50">Partner</ElementH2>
         <ul
           class="flex flex-col items-center justify-center space-y-12 md:flex-row md:space-y-0 md:space-x-12"
         >
