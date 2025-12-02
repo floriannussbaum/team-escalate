@@ -132,7 +132,7 @@
               <h3 id="kosten-jahnturnhalle">15€ pro Monat Mitgliedsbeitrag</h3>
               <ul class="list-inside list-disc">
                 <!-- prettier-ignore -->
-                <li>Für Ermäßigte (Schülerinnen, Studierende, etc.) 12€ pro Monat.
+                <li>Für Studierende 12€ pro Monat mit gültigem Nachweis.
                 </li>
                 <!-- prettier-ignore -->
                 <li>Nur ganzjährig zahlbar mit der Möglichkeit einer vorzeitigen
