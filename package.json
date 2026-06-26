@@ -2,7 +2,7 @@
   "private": true,
   "name": "team-escalate",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packageManager": "pnpm@10.20.0",
   "description": "Team Escalate bietet Parkour, Freerunning und Tricking in Halle (Saale). Hier finden sich Informationen zum Training, Team, Kontakt und Angeboten.",
   "homepage": "https://www.team-escalate.de/",
