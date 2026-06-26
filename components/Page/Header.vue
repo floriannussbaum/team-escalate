@@ -10,6 +10,7 @@
         muted
         loop
         autoplay
+        disablePictureInPicture
         poster="~/assets/images/parkour-training-cat-leap.jpg"
       >
         Ihr Browser unterstützt das Video-Tag leider nicht. Das Video zeigt
