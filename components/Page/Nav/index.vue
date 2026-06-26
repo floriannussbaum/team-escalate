@@ -3,13 +3,8 @@
     ref="navEl"
     v-bind="$attrs"
     :class="[
-      'z-900 w-full text-2xl transition-transform ease-out',
-      showNav === null ? 'duration-0' : 'duration-300',
-      isSticky
-        ? showNav
-          ? 'fixed top-0 left-0 translate-y-0'
-          : 'fixed top-0 left-0 -translate-y-full'
-        : 'static',
+      'z-900 w-full text-2xl',
+      isSticky ? 'fixed top-0 left-0' : 'static',
     ]"
   >
     <!-- desktop menu -->
@@ -78,7 +73,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
-import { useObserver } from '~/composables/useObserver'
+import { useResize } from '~/composables/useResize'
 import { Bars3Icon } from '@heroicons/vue/24/solid'
 
 const route = useRoute()
@@ -86,49 +81,36 @@ const { y: scrollY } = useWindowScroll()
 const { menuItems } = useAppConfig()
 const win = useWindowSafe()
 
-const lastScrollY = ref<number>(0)
 const navEl = ref<HTMLElement | null>(null)
 const navTrigger = ref<HTMLElement | null>(null)
 const isSticky = ref<boolean>(false)
-const showNav = ref<boolean | null>(null)
 const clickEvent = ref(undefined as MouseEvent | undefined)
 
-useObserver(navTrigger, ([entry]) => {
-  const navDistance = navTrigger.value?.offsetTop || 0
-  const isViewportOverNavTrigger = scrollY.value <= navDistance
+const navTriggerTop = ref<number>(0)
 
-  if (isViewportOverNavTrigger) {
-    isSticky.value = false
-    showNav.value = null // Reset nav when first scroll out of nav action for fix nav position flicker
-  } else {
-    isSticky.value = !entry.isIntersecting
-  }
-})
+useResize(() => updateNavState())
 
 function handleScroll(): void {
-  if (isSticky.value) {
-    const currentY = scrollY.value
-    const deltaY = currentY - lastScrollY.value
+  const isViewportOverNavTrigger = scrollY.value <= navTriggerTop.value
+  isSticky.value = isViewportOverNavTrigger ? false : true
+}
 
-    // SCROLL_UP
-    if (deltaY < -1 && showNav.value !== true) {
-      showNav.value = true
-    }
-
-    // SCROLL_DOWN
-    if (deltaY > 1 && showNav.value === true) {
-      showNav.value = false
-    }
-
-    lastScrollY.value = currentY
+function updateNavState(): void {
+  if (!navEl.value || !navTrigger.value) return
+  const navTriggerRect = navTrigger.value.getBoundingClientRect()
+  // If the navTrigger is above the viewport, we need to recalculate its offsetTop
+  if (navTriggerRect.top < 0) {
+    isSticky.value = false // Must be specified for the calculation
+    nextTick(() => {
+      navTriggerTop.value = navEl.value?.offsetTop ?? 0
+      isSticky.value = true // Reset after calculation
+    })
   }
+  navTriggerTop.value = navEl.value?.offsetTop ?? 0
 }
 
 onMounted(() => {
-  if (navTrigger.value) {
-    const rect = navTrigger.value.getBoundingClientRect()
-    isSticky.value = rect.top < 0
-  }
+  updateNavState()
   win.addEventListener('scroll', handleScroll, { passive: true })
 })
 
