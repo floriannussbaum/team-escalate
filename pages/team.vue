@@ -52,7 +52,7 @@
             <a
               href="https://congrav.net/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               class="block transition sm:hover:scale-110"
             >
               <img
@@ -66,7 +66,7 @@
             <a
               href="https://trendsportring-halle.de/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               class="block transition sm:hover:scale-110"
             >
               <img
@@ -80,7 +80,7 @@
             <a
               href="https://www.betterplace.org/de/projects/96908-offspace-freiraum-fuer-trendsport-jugend-kultur-in-halle-saale"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               class="block transition sm:hover:scale-110"
             >
               <img
@@ -90,11 +90,11 @@
               />
             </a>
           </li>
-          <!-- <li> TODO: Activate if ptsv agrees
+          <li>
             <a
               href="https://www.post-halle.de/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               class="block transition sm:hover:scale-110"
             >
               <img
@@ -103,7 +103,7 @@
                 class="h-24 w-auto"
               />
             </a>
-          </li> -->
+          </li>
         </ul>
       </section>
     </PageContainer>
