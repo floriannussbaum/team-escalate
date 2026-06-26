@@ -1,26 +1,22 @@
-# Team Escalate
+<img align="right" src="./public/favicon.svg" width="42" alt="Team Escalate" style="filter:brightness(0) invert(1);" />
 
-<svg role="img" width=auto height="300" viewBox="0 0 528 640" xmlns="http://www.w3.org/2000/svg"><path d="M300 640H188V112H0V0H300V640ZM528 640H352V528H528V640ZM528 376H352V264H528V376ZM528 112H352V0H528V112Z"/></svg>
+# Team Escalate
 
 This page serves to introduce the team, the sports of **parkour**, **freerunning** and **tricking**, as well as general training information.
 
-Check the live version [www.team-escalate.de](https://team-escalate.de)
+✨ **[Live version](https://team-escalate.de)**
 
-## 🏃 About me
+## 🏗 Built with
 
-[![Me](https://img.shields.io/static/v1?label=Site&message=fn-code.com&color=blue&logo=quicklook)][me-href]
+[![Vue](https://skillicons.dev/icons?i=vue)](https://vuejs.org/)
+[![Nuxt](https://skillicons.dev/icons?i=nuxt)](https://nuxt.com)
+[![Tailwindcss](https://skillicons.dev/icons?i=tailwindcss)](https://tailwindcss.com/)
 
-[![GitHub](https://img.shields.io/static/v1?label=GitHub&message=floriannussbaum&color=blue&logo=github)][github-href]
+### Node Version 24
 
-## 🏗 Built With
+## Usage
 
-[![Vue](https://skillicons.dev/icons?i=vue)](http://vuejs.org/)
-[![Vue](https://skillicons.dev/icons?i=nuxt)](https://nuxt.com)
-[![Vue](https://skillicons.dev/icons?i=tailwindcss)](https://tailwindcss.com/)
-
-## Node Version 24
-
-## Installation
+### Installation
 
 Make sure to install dependencies:
 
@@ -28,7 +24,7 @@ Make sure to install dependencies:
 pnpm install
 ```
 
-## Usage
+### Development
 
 Start the development server on `http://localhost:3000`:
 
@@ -36,11 +32,14 @@ Start the development server on `http://localhost:3000`:
 pnpm dev
 ```
 
+### Production
+
+Build the application for production:
+
+```bash
+pnpm generate
+```
+
 ## Copyright and License
 
-Copyright © 2025-PRESENT [Florian Nußbaum][github-href] | all rights reserved
-
-<!-- Links -->
-
-[me-href]: https://fn-code.com
-[github-href]: https://github.com/floriannussbaum
+Copyright © 2025-PRESENT [Florian Nußbaum][https://github.com/floriannussbaum] | all rights reserved
