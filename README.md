@@ -1,4 +1,4 @@
-<img align="right" src="./public/favicon.svg" width="42" alt="Team Escalate" style="filter:brightness(0) invert(1);" />
+<img align="right" src="./public/favicon.svg" width="52" alt="Team Escalate" style="filter:brightness(0) invert(1);" />
 
 # Team Escalate
 
@@ -42,4 +42,4 @@ pnpm generate
 
 ## Copyright and License
 
-Copyright © 2025-PRESENT [Florian Nußbaum][https://github.com/floriannussbaum] | all rights reserved
+Copyright © 2025-PRESENT [Florian Nußbaum](https://github.com/floriannussbaum) | all rights reserved
