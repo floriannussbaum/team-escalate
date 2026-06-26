@@ -315,10 +315,7 @@ import { MapPinIcon, ExclamationCircleIcon } from '@heroicons/vue/24/outline'
 
 const route = useRoute()
 const { training, subMenuItems } = useAppConfig()
-const resetFooterState = inject(
-  'resetFooterState',
-  (scrollFooterOut?: boolean) => {},
-)
+const resetFooterState = inject('resetFooterState', (FooterOut?: boolean) => {})
 
 const wrapper = ref<HTMLElement | null>(null)
 const wrapper2 = ref<HTMLElement | null>(null)

@@ -78,12 +78,12 @@ useObserver(footerTrigger, ([entry]) => {
 
 useResize(() => resetFooterState())
 
-function resetFooterState(scrollFooterOut?: boolean): void {
+function resetFooterState(FooterOut?: boolean): void {
   isFooterInViewport.value = false
   isMainSticky.value = false
   progress.value = 0
   mainHeight.value = 0
-  nextTick(() => initFooterPositioning(scrollFooterOut))
+  nextTick(() => initFooterPositioning(FooterOut))
 }
 
 function getViewportHeight(): number {
@@ -106,7 +106,10 @@ function handleScroll(): void {
   }
 }
 
-async function initFooterPositioning(scrollFooterOut?: boolean): Promise<void> {
+async function initFooterPositioning(
+  FooterOut?: boolean,
+  _scrollFooterOut?: boolean,
+): Promise<void> {
   if (!footerTrigger.value || !footerEl.value || !mainEl.value) return
   const viewportHeight = getViewportHeight()
   footerTriggerDistance.value = footerTrigger.value.offsetTop
@@ -118,11 +121,19 @@ async function initFooterPositioning(scrollFooterOut?: boolean): Promise<void> {
     isObserv.value = true
     await handleScroll()
 
-    if (scrollFooterOut) {
-      win.scrollTo({
-        top: footerTriggerDistance.value - viewportHeight,
-        behavior: 'smooth',
-      })
+    if (_scrollFooterOut) {
+      setTimeout(() => {
+        const footerTriggerRect = footerTrigger.value?.getBoundingClientRect()
+        const elementTop = (footerTriggerRect?.top || 0) + scrollY.value
+        const viewportHeight = window.innerHeight
+        const targetScrollPos = elementTop - viewportHeight
+
+        win.scrollTo({
+          top: targetScrollPos,
+          behavior: 'smooth',
+        })
+      }, 500)
+      return
     }
   }
 
@@ -134,7 +145,7 @@ async function initFooterPositioning(scrollFooterOut?: boolean): Promise<void> {
       footerTriggerDistance.value !== footerTriggerDistanceCheck?.offsetTop ||
       mainHeight.value !== mainHeightCheck?.offsetHeight
     ) {
-      initFooterPositioning(scrollFooterOut)
+      initFooterPositioning(undefined, FooterOut)
     }
   }, 500)
 }
