@@ -358,6 +358,15 @@ onMounted(() => {
   setTimeout(() => updateHeight(), 500) // Fix heights issue with Delay to ensure DOM is up to date
 })
 
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: useRuntimeConfig().public.siteUrl + '/training',
+    },
+  ],
+})
+
 useSeoMeta({
   title: 'Training',
   description:

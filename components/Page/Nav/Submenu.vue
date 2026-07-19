@@ -11,7 +11,7 @@
     <ul class="flex justify-center space-x-2 overflow-hidden sm:space-x-8">
       <li v-for="(value, index) in subMenuItems" :key="index">
         <NuxtLink
-          :to="`${route.path}?pos=${index}`"
+          :to="`${route.path}${index ? '?pos=' + index : ''}`"
           :class="[
             'block px-4 py-4 transition duration-200 ease-in',
             index === position

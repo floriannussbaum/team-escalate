@@ -24,7 +24,7 @@
         <div class="grid gap-6 px-4 sm:grid-cols-3 sm:px-0">
           <article v-for="(value, index) in training" :key="index">
             <NuxtLink
-              :to="`/training?pos=${index}`"
+              :to="`${subMenuItems[index]?.link}${index ? '?pos=' + index : ''}`"
               class="block h-full space-y-2 rounded-md bg-white p-6 shadow"
             >
               <ElementH3>{{ value.type }}</ElementH3>
@@ -102,7 +102,7 @@
 <script setup lang="ts">
 import { MapPinIcon } from '@heroicons/vue/24/outline'
 
-const { training } = useAppConfig()
+const { training, subMenuItems } = useAppConfig()
 
 useSeoMeta({
   // Title is on define on app.vue by default

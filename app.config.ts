@@ -7,9 +7,9 @@ export default defineAppConfig({
   ],
 
   subMenuItems: [
-    { title: 'Jahnturnhalle', link: '/training?pos=' },
-    { title: 'Offspace', link: '/training?pos=' },
-    { title: 'Outdoortraining', link: '/training?pos=' },
+    { title: 'Jahnturnhalle', link: '/training' },
+    { title: 'Offspace', link: '/training' },
+    { title: 'Outdoortraining', link: '/training' },
   ],
 
   sports: [

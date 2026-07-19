@@ -39,7 +39,7 @@
           <ul class="list-none">
             <li v-for="(value, index) in subMenuItems" :key="index">
               <NuxtLink
-                :to="`${value.link}${index}`"
+                :to="`${value.link}${index ? '?pos=' + index : ''}`"
                 class="link font-bold !text-[--primary]"
               >
                 {{ value.title }}
