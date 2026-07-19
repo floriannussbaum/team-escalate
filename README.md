@@ -34,7 +34,7 @@ pnpm dev
 
 ### Production
 
-Build the application for production:
+Build the application for production (output):
 
 ```bash
 pnpm generate
