@@ -173,14 +173,11 @@
       </section>
     </PageContainer>
 
-    <!-- Mitgliedschaft -->
+    <!-- Teilnahme -->
     <PageContainer>
-      <section
-        aria-labelledby="mitgliedschaft"
-        class="space-y-6 overflow-hidden"
-      >
+      <section aria-labelledby="teilnahme" class="space-y-6 overflow-hidden">
         <div class="page-space">
-          <ElementH2 id="mitgliedschaft">Mitgliedschaft</ElementH2>
+          <ElementH2 id="teilnahme">Teilnahme</ElementH2>
         </div>
         <div
           ref="wrapper3"
@@ -191,11 +188,11 @@
           }"
         >
           <article
-            aria-labelledby="mitgliedschaft-jahnturnhalle"
+            aria-labelledby="teilnahme-jahnturnhalle"
             class="inline-block w-1/3 space-y-4 px-4 align-top sm:px-8"
           >
             <div class="page-space">
-              <h3 id="mitgliedschaft-jahnturnhalle">
+              <h3 id="teilnahme-jahnturnhalle">
                 Nach zwei Wochen Probetraining erhälst Du eine
                 Beitrittserklärung direkt vor Ort von den Trainern.
               </h3>
@@ -204,24 +201,27 @@
                 <li>Ab 14 Jahren bzw. auch ab 12 Jahren unter Vorbehalt und nach
                   Absprache mit den Eltern.
                 </li>
-                <!-- prettier-ignore -->
-                <li>Neulinge bitte pünktlich 20 Uhr zur gemeinsamen Erwärmung erscheinen.</li>
+                <li>Bitte 5 min vor Trainingsbeginn (19:55 Uhr) erscheinen.</li>
                 <!-- prettier-ignore -->
                 <li>Besucher und Gruppen bitte per
                   <a href="mailto:info@team-escalate.de" class="link">E-Mail</a>
                   vorab anmelden!
                 </li>
                 <li>Hier bist Du über den Verein versichert.</li>
+                <!-- prettier-ignore -->
+                <li>Für das Hallentraining brauchst Du Sportkleidung, aber keine
+                  Schuhe.
+                </li>
               </ul>
             </div>
           </article>
 
           <article
-            aria-labelledby="mitgliedschaft-offspace"
+            aria-labelledby="teilnahme-offspace"
             class="inline-block w-1/3 space-y-4 px-4 align-top sm:px-8"
           >
             <div class="page-space">
-              <h3 id="mitgliedschaft-offspace">
+              <h3 id="teilnahme-offspace">
                 Für das Offspace benötigst Du
                 <strong>keine Mitgliedschaft</strong>.
               </h3>
@@ -236,21 +236,23 @@
                   vorab anmelden!
                 </li>
                 <li>Hier bist Du Eventsversichert.</li>
+                <li>Du brauchst Sportkleidung und Sportschuhe.</li>
               </ul>
             </div>
           </article>
 
           <article
-            aria-labelledby="mitgliedschaft-outdoortraining"
+            aria-labelledby="teilnahme-outdoortraining"
             class="inline-block w-1/3 space-y-4 px-4 align-top sm:px-8"
           >
             <div class="page-space">
-              <h3 id="mitgliedschaft-outdoortraining">
+              <h3 id="teilnahme-outdoortraining">
                 Für das Outdoortraining benötigst Du
                 <strong>keine Mitgliedschaft</strong>.
               </h3>
               <ul class="list-inside list-disc">
                 <li>Team Escalate übernimmt hier keine Vereinsversicherung.</li>
+                <li>Du brauchst Sportkleidung und Sportschuhe.</li>
               </ul>
             </div>
           </article>
