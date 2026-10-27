@@ -12,7 +12,7 @@ This page serves to introduce the team, the sports of **parkour**, **freerunning
 [![Nuxt](https://skillicons.dev/icons?i=nuxt)](https://nuxt.com)
 [![Tailwindcss](https://skillicons.dev/icons?i=tailwindcss)](https://tailwindcss.com/)
 
-### Node Version 24
+### Node Version v24.22.1
 
 ## Usage
 
